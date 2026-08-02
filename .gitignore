@@ -1,0 +1,58 @@
+# -----------------------------------------------------------------------
+# Gradle
+# -----------------------------------------------------------------------
+.gradle/
+/build/
+gradle-app.setting
+!gradle-wrapper.jar        # keep the wrapper jar — needed to bootstrap builds
+!gradle-wrapper.properties # keep wrapper config
+
+# -----------------------------------------------------------------------
+# Android build outputs
+# -----------------------------------------------------------------------
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# -----------------------------------------------------------------------
+# Local configuration — machine-specific, never commit
+# -----------------------------------------------------------------------
+local.properties           # contains sdk.dir path, varies per machine
+
+# -----------------------------------------------------------------------
+# IntelliJ / Android Studio IDE files
+# -----------------------------------------------------------------------
+*.iml
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/.gitignore
+# Keep .idea/misc.xml and .idea/compiler.xml if you want shared run configs;
+# omit the whole .idea/ dir if you don't:
+.idea/
+
+# -----------------------------------------------------------------------
+# Kotlin
+# -----------------------------------------------------------------------
+.kotlin/
+
+# -----------------------------------------------------------------------
+# OS-generated
+# -----------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------------------------------------------------
+# Signing — never commit keystores or key configs
+# -----------------------------------------------------------------------
+*.jks
+*.keystore
+keystore.properties
+release-signing.properties

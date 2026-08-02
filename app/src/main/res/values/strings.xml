@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">ChargeGuard</string>
+
+    <!-- NotificationHelper channel labels -->
+    <string name="notif_channel_status_name">Charge Status</string>
+    <string name="notif_channel_status_desc">Ongoing monitoring status</string>
+    <string name="notif_channel_alerts_name">Charge Alerts</string>
+    <string name="notif_channel_alerts_desc">Alerts when battery reaches your target threshold</string>
+
+    <!-- Foreground service notification -->
+    <string name="notif_status_title">ChargeGuard active</string>
+    <string name="notif_status_text">Battery: %1$d%% — alert at %2$d%%</string>
+
+    <!-- T+0 alert -->
+    <string name="notif_alert_title">Unplug reminder</string>
+    <string name="notif_alert_text">Battery at %1$d%% — consider unplugging.</string>
+
+    <!-- T+2min / sound alert -->
+    <string name="notif_sound_title">Still charging!</string>
+    <string name="notif_sound_text">Battery at %1$d%% — still plugged in.</string>
+
+    <!-- T+5min / full-screen alert -->
+    <string name="notif_fullscreen_title">Unplug now</string>
+    <string name="notif_fullscreen_text">Battery at %1$d%% — tap to dismiss.</string>
+
+    <!-- FullScreenAlertActivity UI -->
+    <string name="alert_battery_label">Battery</string>
+    <string name="alert_target_label">Target was %1$d%%</string>
+    <string name="alert_btn_unplugged">I\'ve unplugged it</string>
+    <string name="alert_btn_snooze">Snooze 10 min</string>
+
+    <!-- SettingsScreen UI -->
+    <string name="settings_title">ChargeGuard</string>
+    <string name="settings_upper_threshold_label">Stop charging around %1$d%%</string>
+    <string name="settings_lower_threshold_label">Remind me to plug in below %1$d%%</string>
+    <string name="settings_sound_label">Sound alert</string>
+    <string name="settings_sound_desc">Play sound at the 2-minute escalation</string>
+    <string name="settings_fullscreen_label">Full-screen alert</string>
+    <string name="settings_fullscreen_desc">Show alarm-style screen at 5 minutes</string>
+    <string name="settings_monitoring_label">Enable monitoring</string>
+    <string name="settings_monitoring_desc">Run in background and alert when threshold is reached</string>
+
+    <!-- OnboardingScreen UI -->
+    <string name="onboarding_title">Before you start</string>
+    <string name="onboarding_intro">ChargeGuard runs in the background to alert you when your battery reaches your target level. On MIUI devices, a few extra steps are needed to prevent the system from killing the app.</string>
+    <string name="onboarding_status_done">Done</string>
+    <string name="onboarding_btn_open">Open Settings</string>
+    <string name="onboarding_btn_continue">Continue</string>
+
+    <!-- Onboarding step 1: Notification permission -->
+    <string name="onboarding_notif_title">Notification permission</string>
+    <string name="onboarding_notif_desc">Required to show charge alerts.</string>
+    <string name="onboarding_notif_btn">Grant permission</string>
+
+    <!-- Onboarding step 2: Battery optimisation exemption -->
+    <string name="onboarding_battery_opt_title">Battery optimisation exemption</string>
+    <string name="onboarding_battery_opt_desc">Prevents Android from suspending the monitoring service.</string>
+
+    <!-- Onboarding step 3: MIUI Autostart -->
+    <string name="onboarding_autostart_title">MIUI Autostart</string>
+    <string name="onboarding_autostart_desc">Allows ChargeGuard to restart automatically after a reboot. Please confirm this is enabled manually after opening the screen.</string>
+    <string name="onboarding_autostart_manual">Please confirm manually</string>
+
+    <!-- Onboarding step 4: MIUI battery saver -->
+    <string name="onboarding_miui_battery_title">MIUI battery saver — No restrictions</string>
+    <string name="onboarding_miui_battery_desc">Set ChargeGuard to "No restrictions" in App battery saver to prevent MIUI from killing it. Please confirm manually after opening the screen.</string>
+    <string name="onboarding_miui_battery_manual">Please confirm manually</string>
+
+    <!-- Onboarding step 5: Lock in Recents -->
+    <string name="onboarding_recents_title">Lock app in Recents</string>
+    <string name="onboarding_recents_desc">In the Recents screen, swipe down on the ChargeGuard card to lock it. This prevents MIUI from closing it when you clear all apps. No button needed — do this manually.</string>
+</resources>
